@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+    margin: 8rem;    
+    place-content: center;
+    justify-content: center;
+
+}
+
+.main-div{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    justify-content: center;
+    width: 1150px;
+    border-radius: 10px;
+}
+
+.first-div, .second-div{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Inter';
+}
+
+h1, p, .grid-div{
+    flex-direction: column;
+    margin: 3rem 7rem 1.5rem 5rem;
+}
+
+.inside-text{
+    color: hsl(277, 64%, 61%);
+    text-transform: lowercase;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter';
+}
+
+h2{
+    color: #fff;
+    font-family: 'Inter';
+}
+
+span {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca';
+}
+
+.main-grid-div{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+
+.grid-div-1{
+    margin: 3rem 4rem 0 0;
+}
+
+.grid-div-2{
+    margin: 3rem 5rem 0 0;
+}
+
+.grid-div-3{
+    margin: 3rem 3rem 0 0;
+}
+
+img{
+    filter: invert(10%) 
+    sepia(50%) 
+    saturate(500%) 
+    hue-rotate(268deg) 
+    brightness(69%) 
+    contrast(110%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    body{
+        justify-content: center;
+        margin: 2.5rem;
+
+    }
+    .main-div{
+        flex-direction: column-reverse;
+        width: 400px;
+    }
+
+    .first-div{
+        text-align: center;
+        justify-content: center;
+        margin: 0.4rem
+    }
+
+   .main-grid-div{
+            flex-direction: column;            
+        }
+        .grid-div-1{
+            margin: 2rem 3rem 1rem 0;
+        }
+        .grid-div-2{
+            margin: 2rem 3rem 1rem 0;
+        }
+
+        .grid-div-3{
+            margin: 2rem 3rem 1rem 0;
+        }
+
+    img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+    
+}
